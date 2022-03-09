@@ -44,16 +44,8 @@ cd datasets/gas
 tfds build
 ```
 
-However, the data is currently hosted in Google Drive, and due to recent changes in how
-Drive allows files to be downloaded, it is possible that an error will occur when
-trying to build some of the datasets. If this happens, you should be able to manually
-download the files yourself, using the links at the top of the datasets' Python files,
-and then direct `tfds` to those files when you try to build.
-
-Given that these are common benchmark datasets, they can also be obtained/recreated via
-other means relatively easily. See
-[Masked Autoregressive Flow for Density Estimation](https://arxiv.org/abs/1705.07057) 
-for details on these datasets.
+Note that `gdown` must be installed (via pip) in order to download the data and build
+the datasets.
 
 ## Organization
 

@@ -1,4 +1,4 @@
-bax==0.1.9
+bax==0.1.11
 chex==0.1.0
 click==8.0.4
 distrax==0.1.1

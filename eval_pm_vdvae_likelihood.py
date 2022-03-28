@@ -182,8 +182,8 @@ def main(_):
     # across the duration of evaluation, we (very infrequently) end up with non-finite
     # likelihoods. Naively including them in the mean across all instances will result
     # in a non-finite mean, which is why we mask them out here. In our evaluations in
-    # the paper, we found 0 BPD values got masked out and only 40 out of 50,000 AC
-    # likelihood values were masked out.
+    # the paper, we found 0 BPD values got masked out and only 2 out of 50,000 AC
+    # likelihood values were masked out for MNIST.
     bpd = np.ma.masked_array(
         bpd, mask=(~np.isfinite(bpd)) | (bpd > 1e10) | (bpd < -1e10)
     )

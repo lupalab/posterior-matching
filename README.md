@@ -1,18 +1,18 @@
 [1]: https://arxiv.org/abs/2201.12414
 
-# Any Variational Autoencoder Can Do Arbitrary Conditioning
+# Posterior Matching for Arbitrary Conditioning
 
 This is the official repository for the paper
-[Any Variational Autoencoder Can Do Arbitrary Conditioning][1]. It contains code that
+[Posterior Matching for Arbitrary Conditioning][1]. It contains code that
 can be used to reproduce most of the experiments from the paper.
 
 All of our models and experiments are implemented in
 [Jax](https://github.com/google/jax).
 
-In the paper, we present a method, called Posterior Matching, that allows _any_
-Variational Autoencoder to do arbitrary conditional density estimation, without
-requiring any changes to the base VAE. This technique can even be applied to pretrained
-VAEs.
+In the paper, we present a method, called Posterior Matching, that allows
+Variational Autoencoders to do arbitrary conditional density estimation, without
+requiring any changes to the base VAE model. This technique can even be applied to
+pretrained VAEs.
 
 ![Posterior Matching Diagram](img/posterior-matching-diagram.png)
 

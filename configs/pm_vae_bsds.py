@@ -26,15 +26,15 @@ def get_config():
     config.model.masked_posterior_config.hidden_units = 256
     config.model.masked_posterior_config.residual_blocks = 3
 
-    config.model.encoder_config = ConfigDict()
-    config.model.encoder_config.residual_blocks = 5
-    config.model.encoder_config.hidden_units = 256
-    config.model.encoder_config.layer_norm = True
+    config.model.encoder_net_config = ConfigDict()
+    config.model.encoder_net_config.residual_blocks = 5
+    config.model.encoder_net_config.hidden_units = 256
+    config.model.encoder_net_config.layer_norm = True
 
-    config.model.decoder_config = ConfigDict()
-    config.model.decoder_config.residual_blocks = 5
-    config.model.decoder_config.hidden_units = 256
-    config.model.decoder_config.layer_norm = True
+    config.model.decoder_net_config = ConfigDict()
+    config.model.decoder_net_config.residual_blocks = 5
+    config.model.decoder_net_config.hidden_units = 256
+    config.model.decoder_net_config.layer_norm = True
 
     config.model.matching_ll_stop_gradients = True
 
